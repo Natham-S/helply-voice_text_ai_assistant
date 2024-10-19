@@ -18,6 +18,7 @@ class _HomeScreen extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      
       appBar: CustomAppBar(),
       body: HomeChat()
     );

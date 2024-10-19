@@ -12,6 +12,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.dark,
       ),
+      actions: const [
+        Icon(Icons.more_vert_rounded),
+        SizedBox(width: 8,)
+      ],
+      leading: Icon(Icons.menu_rounded),
+
       title: Text(
         "Helply",
         style: GoogleFonts.bricolageGrotesque(
@@ -19,7 +25,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           color: const Color(0xFF313131),
         ),
       ),
-      backgroundColor: Colors.transparent,
+      elevation: 0,
+
       centerTitle: true,
     );
   }
